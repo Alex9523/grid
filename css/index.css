@@ -1,0 +1,29 @@
+.page-wrapper{
+    background: linear-gradient(to top, white, gray);
+    display:grid;
+    grid-template-areas:
+    "section"
+    "main_supporting"
+    "wrapper"
+}
+
+section{
+    grid-area:section;
+}
+
+.main_supporting{
+    grid-area:main_supporting;
+}
+
+aside .wrapper{
+    grid-area:wrapper;
+}
+
+@media(min-width: 640px){
+    .page-wrapper{
+    grid-template-columns:4fr 1fr;
+    "section" "main_supporting"
+    "section" "main_supporting"
+    "wrapper" "wrapper"
+}
+}
