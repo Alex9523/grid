@@ -24,7 +24,3 @@ function digit(val) {
 }
 
 
-function dor() {
-    display.value = eval(display.value);
-}
-
